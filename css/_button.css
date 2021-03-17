@@ -1,0 +1,32 @@
+/* In this folder we can add our partials or components, like buttons or cards navbar etc. Below are two button examples so you can visualize the different properties and play around with it if you like*/
+
+ .btn-one {
+  display: inline-block;
+  border-radius: 34px;
+  background: transparent;
+  color: white;
+  padding: 12px 12px;
+  font-family: 'Comfortaa';
+  font-size: 20px;
+  margin-top: 250px;
+ }
+
+ .btn-one:hover {
+  background: transparent;
+  color: white;
+  border: 1.5px solid white;
+ }
+
+ .btn-two {
+    color: #fff;
+    background-color: #ACC196;
+    border-color: #ACC196;
+    padding: 12px 12px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.btn-two:hover {
+   text-decoration: none;
+  color: #E2B4BD;
+}
