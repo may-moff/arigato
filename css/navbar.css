@@ -1,1 +1,45 @@
 /*Add the styles for the navbar section here. Remember to add 'navbar' in front of every class you add so that we don't override each other's code :)*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+.navbar {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar img {
+  height: 45px;
+  width: auto;
+  justify-self: start;
+  margin-left: 20px;
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+}
+
+.nav-item a {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  font-family: 'Comfortaa';
+
+}
+
+.nav-item a:hover {
+  color: #03667F;
+}
+
+/*.no-search {
+  transform: translate(0);
+  transition: transform 0.7s ease-in-out;
+}*/
