@@ -1,4 +1,6 @@
 /*Add the styles for the navbar section here. Remember to add 'navbar' in front of every class you add so that we don't override each other's code :)*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
 * {
@@ -8,52 +10,119 @@
   font-family: 'Comfortaa';
 }
 
-.navbar {
-  display: grid;
-  grid-template-columns: 2fr 6fr;
+nav{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  height: 50px;
-  overflow: hidden;
+  min-height: 8vh;
   background-color: white;
 }
 
-.navbar img {
-  height: 61px;
-  width: auto;
-  justify-self: start;
-  margin-left: 20px;
-
+.nav-logo {
+  color: #ea5777;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 
-.navbar ul {
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-links li {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
+}
+
+.nav-links a {
+  color: #ea5777;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
 
 }
 
-.nav-item a {
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #ea5777;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow: hidden;
+  }
+  .nav-links {
+/*    to get full screen*/
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: black;
+    display-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.nav-item a {
   color: #ea5777;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
-  /*font-family: 'Comfortaa';*/
+
   border: transparent;
-  border-radius: 34px;
-  padding: 10px;
+  border-radius: 36px;
+  padding: 9px;
+  letter-spacing: 3px;
+}*/
 
-}
-
-.nav-item a:hover {
+/*.nav-item a:hover {
   color: #03667F;
   border: solid 1px;
   border-radius: 34px;
-  border-color: #03667F;
+  border-color: #ea5777;
   padding: 10px;
-}
-
-/*.no-search {
-  transform: translate(0);
-  transition: transform 0.7s ease-in-out;
 }*/
+
+
