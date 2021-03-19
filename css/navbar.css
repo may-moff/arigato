@@ -1,6 +1,13 @@
 /*Add the styles for the navbar section here. Remember to add 'navbar' in front of every class you add so that we don't override each other's code :)*/
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa';
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 2fr 6fr;
@@ -11,7 +18,7 @@
 }
 
 .navbar img {
-  height: 45px;
+  height: 61px;
   width: auto;
   justify-self: start;
   margin-left: 20px;
@@ -26,17 +33,24 @@
 }
 
 .nav-item a {
-  color: black;
+  color: #ea5777;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
-  font-family: 'Comfortaa';
+  /*font-family: 'Comfortaa';*/
+  border: transparent;
+  border-radius: 34px;
+  padding: 10px;
 
 }
 
 .nav-item a:hover {
   color: #03667F;
+  border: solid 1px;
+  border-radius: 34px;
+  border-color: #03667F;
+  padding: 10px;
 }
 
 /*.no-search {
