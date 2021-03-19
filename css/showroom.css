@@ -1,12 +1,16 @@
-.showroom {
-  max-width: 400px;
-  position: relative;
-  margin: auto;
+* {
+  box-sizing: border-box;
 }
 
-/* .myPics {
+.showroom {
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.myPics {
   display: none;
-} */
+}
 
 .prev,
 .next {
