@@ -1,1 +1,142 @@
 /*Add the styles for the navbar section here. Remember to add 'navbar' in front of every class you add so that we don't override each other's code :)*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa';
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  border-bottom: solid 0.2px;
+  border-color: #ea5777;
+}
+
+.nav-logo {
+  color: #ea5777;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ea5777;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  /*border: solid 0.5px;
+  border-radius: 36px;
+  padding: 8px;*/
+  color: black;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #ea5777;
+  margin: 5px;
+  /*to make burger bars look like they are moving on click*/
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+/*    to get full screen*/
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    padding: 45px;
+    background-color: black;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*width of mobile menue*/
+    width: 100%;
+    /*side from which menue slides in*/
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links a:hover {
+    border: solid 0.5px;
+    border-radius: 36px;
+    padding: 8px;
+    color: #ea5777;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.menu-icon .dash1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon .dash2 {
+  opacity: 0;
+}
+
+.menu-icon .dash3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
