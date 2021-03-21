@@ -10,12 +10,14 @@
   font-family: 'Comfortaa';
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   background-color: white;
+  border-bottom: solid 0.2px;
+  border-color: #ea5777;
 }
 
 .nav-logo {
@@ -39,7 +41,13 @@ nav{
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 14px;
+}
 
+.nav-links a:hover {
+  /*border: solid 0.5px;
+  border-radius: 36px;
+  padding: 8px;*/
+  color: black;
 }
 
 .burger {
@@ -51,6 +59,8 @@ nav{
   height: 2px;
   background-color: #ea5777;
   margin: 5px;
+  /*to make burger bars look like they are moving on click*/
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -61,68 +71,72 @@ nav{
 
 @media screen and (max-width: 760px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
+
   .nav-links {
 /*    to get full screen*/
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
+    padding: 45px;
     background-color: black;
-    display-flex;
+    opacity: .9;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    /*width of mobile menue*/
     width: 100%;
+    /*side from which menue slides in*/
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
 
+  .nav-links a:hover {
+    border: solid 0.5px;
+    border-radius: 36px;
+    padding: 8px;
+    color: #ea5777;
+  }
 
+  .nav-links li {
+    opacity: 0;
+  }
 
-
-
+  .burger {
+    display: block;
+    cursor: pointer;
   }
 }
 
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.menu-icon .dash1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon .dash2 {
+  opacity: 0;
+}
+
+.menu-icon .dash3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.nav-item a {
-  color: #ea5777;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-
-  border: transparent;
-  border-radius: 36px;
-  padding: 9px;
-  letter-spacing: 3px;
-}*/
-
-/*.nav-item a:hover {
-  color: #03667F;
-  border: solid 1px;
-  border-radius: 34px;
-  border-color: #ea5777;
-  padding: 10px;
-}*/
 
 
