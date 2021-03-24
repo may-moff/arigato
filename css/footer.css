@@ -1,1 +1,50 @@
 /*Add the styles for the footer section here. Remember to add 'footer' in front of every class you add so that we don't override each other's code :)*/
+
+.footer-container{
+    padding-top: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+}
+
+ i{
+    width: 30px;
+    height: 30px;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  .footer-container > p > a{
+      color: var(--color-light-green);
+      font-size: var(--font-size-s);
+  }
+
+  .footer-container > a{
+   color: #fb1f70;
+  }
+
+  .footer-container > a:hover{
+    color: #62E4DA;
+   }
+
+   .footer-container > a:active{
+    color: #62E4DA;
+   }
+
+   .fa, .fas{
+       font-size: 30px;
+       margin: var(--single-space);
+   }
+
+   .fab, .fa-instagram{
+    font-size: 30px;
+    margin: var(--single-space);
+   }
+
+
