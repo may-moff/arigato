@@ -41,7 +41,3 @@ body {
   background-size: 400%;
   animation: bg-animation 15s infinite alternate;
 }
-
-/*********** The :root CSS pseudo-class represents the <html> element and is identical to the selector html ***********/
-
-/************** Declare global CSS variables **************/
