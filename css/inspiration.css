@@ -2,13 +2,13 @@
 .insta-feed {
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: available;
     padding: 10px;
-    border: 5px solid gray;
+    border: 50px #390082;
     margin: 0;
-    height: 500px;
-    overflow: scroll;
-   
+    height: 80%;
+    overflow: -moz-scrollbars-vertical;
+
 }
 .crt-col-3{
     width:10%;
