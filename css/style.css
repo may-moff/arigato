@@ -41,3 +41,7 @@ body {
   background-size: 400%;
   animation: bg-animation 15s infinite alternate;
 }
+
+html {
+  scroll-behavior: smooth;
+}
