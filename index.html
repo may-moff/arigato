@@ -45,11 +45,9 @@
 
 
   <div class="home">
-  <video class="home-video" autoplay loop>
-     <source src="/assets/Studio Sach_Home Video.webm"
-            type="video/webm">
-     <source src="assets/Studio Sach_Home Video.mp4"
-            type="video/mp4">
+    <video class="home-video" autoplay loop>
+      <source src="/assets/Studio Sach_Home Video.webm" type="video/webm">
+      <source src="assets/Studio Sach_Home Video.mp4"type="video/mp4">
   </div>
 
   <!-- This is where the home section ends -->
@@ -72,7 +70,30 @@
   <!-- This is where the inspiration ends -->
 
   <!-- This is where the contact section starts -->
-  <div class="contact"></div>
+  <div class="contact">
+    <div class="contact-container">
+      <form>
+        <ul>
+          <li>
+            <label for="name"><span>Name <span class="required-star">*</span></span></label>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+            <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+            <input type="email" id="mail" name="user_email">
+          </li>
+          <li>
+            <label for="msg"><span>Message</span></label>
+            <textarea rows="4" cols="50"></textarea>
+          </li>
+          <li>
+            <input type="submit">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
   <!-- This is where the contact section ends -->
 
   <!-- This is where the footer section starts -->

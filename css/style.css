@@ -11,14 +11,14 @@
     --color-white: #F5F5F5;
     --color-purple-dark: #390082;
     --color-purple-light: #9161CE;
-    
+
     --font-size-xs: 12px; /* Tertiary/caption/label/wildcard font size and when we use uppercase for labels or buttons*/
     --font-size-s: 14px; /* For secondary text–less important details of the site. Supporting information and stats, sometimes captions, etc.*/
     --font-size-m: 16px; /* Default font size – for all body text – as well as most controls, like text boxes, dropdowns, buttons, and menus */
     --font-size-l: 24px; /* For section titles */
     --font-size-xl: 32px; /* For Headline */
 
-    /* Let's name it our basic unit to define space, we can multiply it or divide it */ 
+    /* Let's name it our basic unit to define space, we can multiply it or divide it */
     --single-space: 12px;
 
     --shadow: 4px 4px 5px grey;
@@ -31,11 +31,11 @@
     *,
     *::before,
     *::after {
-        margin: 0 auto;
+        margin: 0;
         box-sizing: border-box;
     }
 
-    /* Set core body defaults */
+  /*   Set core body defaults*/
     body {
     min-height: 100vh;
     scroll-behavior: smooth;

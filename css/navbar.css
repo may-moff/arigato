@@ -76,6 +76,7 @@ nav {
 
   .nav-links {
 /*    to get full screen*/
+    z-index: 999;
     position: absolute;
     right: 0px;
     height: 92vh;
