@@ -27,6 +27,7 @@ nav {
   background-color: white;
   border-bottom: solid 0.2px;
   border-color: #ea5777;
+  z-index: 100;
 }
 
 .nav-logo {
