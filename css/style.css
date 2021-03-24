@@ -1,45 +1,47 @@
 /*Main file for fonts and colors, add the imports on top of the file*/
-
-/*********** The :root CSS pseudo-class represents the <html> element and is identical to the selector html ***********/
-
-/************** Declare global CSS variables **************/
 :root {
-    /* Arigato/GradientLinearPinkBlue */
-    --main-gradient-pink-blue: linear-gradient(90deg, #EF5978 8%, #9FCBE4 100%);
-    /* Arigato/GradientDiagonalPinkPurple */
-    --main-gradient-pink-purple: linear-gradient(135deg, #FB1F70 0%, #A370DF 100%);
-    --color-white: #F5F5F5;
-    --color-purple-dark: #390082;
-    --color-purple-light: #9161CE;
-    
-    --font-size-xs: 12px; /* Tertiary/caption/label/wildcard font size and when we use uppercase for labels or buttons*/
-    --font-size-s: 14px; /* For secondary text–less important details of the site. Supporting information and stats, sometimes captions, etc.*/
-    --font-size-m: 16px; /* Default font size – for all body text – as well as most controls, like text boxes, dropdowns, buttons, and menus */
-    --font-size-l: 24px; /* For section titles */
-    --font-size-xl: 32px; /* For Headline */
+  --font-size-xs: 12px; /* Tertiary/caption/label/wildcard font size and when we use uppercase for labels or buttons*/
+  --font-size-s: 14px; /* For secondary text–less important details of the site. Supporting information and stats, sometimes captions, etc.*/
+  --font-size-m: 16px; /* Default font size – for all body text – as well as most controls, like text boxes, dropdowns, buttons, and menus */
+  --font-size-l: 24px; /* For section titles */
+  --font-size-xl: 32px; /* For Headline */
 
-    /* Let's name it our basic unit to define space, we can multiply it or divide it */ 
-    --single-space: 12px;
+  /* Let's name it our basic unit to define space, we can multiply it or divide it */
+  --single-space: 12px;
 
-    --shadow: 4px 4px 5px grey;
+  --shadow: 4px 4px 5px grey;
 
-    --border-radius: 4px;
+  --border-radius: 4px;
+}
 
-    }
+/*Reseter CSS -  Remove styles defined from the browser by default*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-    /*Reseter CSS -  Remove styles defined from the browser by default*/
-    *,
-    *::before,
-    *::after {
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 
-    /* Set core body defaults */
-    body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    background: var(--main-gradient-pink-blue);
-    }
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  --gradient: linear-gradient(45deg, #fb1f70, #f35373, #9f74e6, #58a5db);
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 15s infinite alternate;
+}
+
+html {
+  scroll-behavior: smooth;
+}
