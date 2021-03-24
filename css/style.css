@@ -1,5 +1,10 @@
 /*Main file for fonts and colors, add the imports on top of the file*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Chakra+Petch:wght@600&display=swap');
+
 :root {
+
+  --color-light-green: #62E4DA;
   --font-size-xs: 12px; /* Tertiary/caption/label/wildcard font size and when we use uppercase for labels or buttons*/
   --font-size-s: 14px; /* For secondary text–less important details of the site. Supporting information and stats, sometimes captions, etc.*/
   --font-size-m: 16px; /* Default font size – for all body text – as well as most controls, like text boxes, dropdowns, buttons, and menus */
@@ -41,3 +46,33 @@ body {
   background-size: 400%;
   animation: bg-animation 15s infinite alternate;
 }
+
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-xl);
+    color: var(--color-light-green);
+  }
+  
+  h2{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-l);
+    color: var(--color-light-green);
+  }
+  
+  h3{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: var(--font-size-s);
+    color: var(--color-light-green);
+  }
+  
+  p{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-m);
+    color: black;
+  
+  }
