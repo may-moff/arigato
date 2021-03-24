@@ -17,26 +17,129 @@
 </head>
 <body>
   <!-- This is where the navbar section starts -->
-  <div class="navbar">
-  <a><i class="fas fa-bars"></i></a>
-  </div>
+  <nav>
+    <div class="nav-logo">
+      <h5>Sacha Bekkevold</h5>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a>
+      </li>
+      <li><a href="#showroom">Showroom</a>
+      </li>
+      <li><a href="#about">About</a>
+      </li>
+      <li><a href="#inspiration">Inspiration</a>
+      </li>
+      <li><a href="#contact">Contact</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="dash1"></div>
+      <div class="dash2"></div>
+      <div class="dash3"></div>
+    </div>
+  </nav>
   <!-- This is where the navbar section ends -->
 
   <!-- This is where the home section starts. -->
-  <div class="home">home</div>
+  <div class="home" id="home">
+  <video class="home-video" autoplay loop>
+     <source src="/assets/Studio Sach_Home Video.webm"
+            type="video/webm">
+     <source src="assets/Studio Sach_Home Video.mp4"
+            type="video/mp4">
+  </video>
+  </div>
+
   <!-- This is where the home section ends -->
 
   <!--   This is where the showroom section starts-->
-  <div class="showroom"></div>
+  <div class="showroom" id="showroom">
+    <div class="carousel-container">
+      <div class="carousel-Img">
+        <div class="numbertext">1 / 12</div>
+        <img src="./assets/Bike-Short-Blue.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">2 / 12</div>
+        <img src="./assets/Bike-Short-Hot-Pink.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">3 / 12</div>
+        <img src="./assets/Kimono-Lagoon-Front.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">4 / 12</div>
+        <img src="assets/Kimono-Mermaid-Back.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">5 / 12</div>
+        <img src="./assets/Kimono-Mermaid.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">6 / 12</div>
+        <img src="./assets/Kimono-Sherbet-Cropped-Front.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">7 / 12</div>
+        <img src="./assets/Long-Kimono-Blue-Front-Open.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">8 / 12</div>
+        <img src="./assets/Long-Kimono-Orange-Front.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">9 / 12</div>
+        <img src="./assets/Long-Kimono-Pink-Blue-Front.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">10 / 12</div>
+        <img src="./assets/Sweater-Blue.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">11 / 12</div>
+        <img src="./assets/Sweater-Orange.jpg"
+        alt="clothing image">
+      </div>
+      <div class="carousel-Img">
+        <div class="numbertext">12 / 12</div>
+        <img src="./assets/Sweater-Pink.jpg"
+        alt="clothing image">
+      </div>
+     
+      <span class="prev" id="prev">
+        &#10094; </span>
+       <span class="next" id="next">
+            &#10095; </span>
+    </div>
+  </div>
+
+  
+
   <!--  This is where the showroom section ends -->
 
   <!--This is where the about section starts-->
-  <div class="about"></div>
+  <div class="about" id="about">
+
+    <img src="assets/kimonoMermaidModel.jpg">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+  </div>
   <!--   This is where the about section ends
  -->
 
   <!-- This is where the inspiration section starts  -->
-  <div class="inspiration">
+
+  <div class="inspiration id="inspiration">
 <!-- Place <div> tag where you want the feed to appear -->
   <!-- Place <div> tag where you want the feed to appear -->
 
@@ -57,12 +160,34 @@
   e.parentNode.insertBefore(i, e);
 })();
 </script>
-
   </div>
   <!-- This is where the inspiration ends -->
 
   <!-- This is where the contact section starts -->
-  <div class="contact"></div>
+  <div class="contact" id="contact">
+    <div class="contact-container">
+      <form>
+        <ul>
+          <li>
+            <label for="name"><span>Name <span class="required-star">*</span></span></label>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+            <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+            <input type="email" id="mail" name="user_email">
+          </li>
+          <li>
+            <label for="msg"><span>Message</span></label>
+            <textarea rows="4" cols="50"></textarea>
+          </li>
+          <li>
+            <input type="submit">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
   <!-- This is where the contact section ends -->
 
   <!-- This is where the footer section starts -->
@@ -71,5 +196,7 @@
 
 
 <script src="index.js"></script>
+<script src="showroom.js"></script>
+
 </body>
 </html>

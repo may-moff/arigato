@@ -1,1 +1,4 @@
 /*Add the styles for the home section here. Remember to add 'home' in front of every class you add so that we don't override each other's code :)*/
+.home-video {
+  width: 100%;
+}
