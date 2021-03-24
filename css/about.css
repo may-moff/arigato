@@ -1,4 +1,29 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
-.about {
-  background-color: peru;
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 150px;
+}
+
+.about-main-title {
+  font-size: var(--font-size-l);
+  color: pink;
+  padding-bottom: 20px;
+}
+
+.about-welcome-title {
+  font-size: var(--font-size-l);
+  color: blue;
+  padding-bottom: 20px;
+}
+
+.about-image-portrait {
+  margin-left: auto;
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+.about-paragraph {
+  color: yellow;
 }
