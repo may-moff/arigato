@@ -47,6 +47,7 @@ body {
   animation: bg-animation 15s infinite alternate;
 }
 
+
 h1{
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 400;
@@ -76,3 +77,8 @@ h1{
     color: black;
   
   }
+
+html {
+  scroll-behavior: smooth;
+}
+
