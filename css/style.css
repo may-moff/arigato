@@ -1,16 +1,34 @@
 /*Main file for fonts and colors, add the imports on top of the file*/
 
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+body {
+  min-height: 100vh;
+  --gradient: linear-gradient(45deg, #fb1f70, #9f74e6, #58a5db);
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 15s infinite alternate;
+}
+
+
 /*********** The :root CSS pseudo-class represents the <html> element and is identical to the selector html ***********/
 
 /************** Declare global CSS variables **************/
 :root {
     /* Arigato/GradientLinearPinkBlue */
-    --main-gradient-pink-blue: linear-gradient(90deg, #EF5978 8%, #9FCBE4 100%);
+/*     --main-gradient-pink-blue: linear-gradient(90deg, #EF5978 8%, #9FCBE4 100%); */
     /* Arigato/GradientDiagonalPinkPurple */
-    --main-gradient-pink-purple: linear-gradient(135deg, #FB1F70 0%, #A370DF 100%);
+/*     --main-gradient-pink-purple: linear-gradient(135deg, #FB1F70 0%, #A370DF 100%);
     --color-white: #F5F5F5;
     --color-purple-dark: #390082;
-    --color-purple-light: #9161CE;
+    --color-purple-light: #9161CE; */
 
     --font-size-xs: 12px; /* Tertiary/caption/label/wildcard font size and when we use uppercase for labels or buttons*/
     --font-size-s: 14px; /* For secondary text–less important details of the site. Supporting information and stats, sometimes captions, etc.*/
@@ -43,3 +61,4 @@
     line-height: 1.5;
     background: var(--main-gradient-pink-blue);
     }
+
