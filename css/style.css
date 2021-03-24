@@ -1,1 +1,17 @@
 /*Main file for fonts and colors, add the imports on top of the file*/
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+body {
+  min-height: 100vh;
+  --gradient: linear-gradient(45deg, #fb1f70, #9f74e6, #58a5db);
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 15s infinite alternate;
+}
