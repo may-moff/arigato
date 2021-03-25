@@ -1,0 +1,137 @@
+/**,*:before,*:after {
+  box-sizing: border-box;
+}*/
+
+/*:after {
+  content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+h1 {
+  margin:80px 0 10px 0;
+  font-size: 52px;
+  font-family: 'Comfortaa'
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #DC143C,
+  2px 2px 0px #DC143C,
+  3px 3px 0px #DC143C,
+  4px 4px 0px #DC143C;
+}
+
+h2 {
+  font-size: 24px;
+}*/
+
+/*body {
+  padding: 100px 0;
+  background: lightblue;
+  color: white;
+  max-width:640px;
+  font-family: 'Comfortaa';
+  font-size: 14px;
+  line-height:1.4;
+  font-smoothing: anti-aliased;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap');
+
+.side-nav {
+  float: left;
+  position: fixed;
+  padding-top: 150px;
+  margin-left: 15px;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 20;
+  /*line-height: 3;*/
+}
+
+.side-nav ul {
+  text-align: center;
+}
+
+.side-nav ul li {
+  position: relative;
+  width: 70px;
+/*  height of icon row*/
+  height: 67px;
+  cursor: pointer;
+  background: transparent;
+  /*text-transform: uppercase;*/
+  transition:all .4s ease-out;
+}
+
+.side-nav ul li:after {
+  position: absolute;
+  background: transparent;
+  /*border: solid;*/
+  color: white;
+  font-size: 22px;
+  font-weight: '700';
+
+ /* top:0;
+  left: 70px;*/
+ /* width of square*/
+  width: 200px; /*height: 100%;*/
+  opacity: .9;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition:all .4s ease-out;
+}
+
+.side-nav ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 65px;
+  margin-left: -30px;
+}
+.side-nav ul li:nth-child(2):after {
+  content: "Showroom";
+  line-height: 65px;
+}
+.side-nav ul li:nth-child(3):after {
+  content: "About";
+  line-height: 65px;
+  margin-left: -25px;
+
+}
+.side-nav ul li:nth-child(4):after {
+  content: "Inspiration";
+  line-height: 65px;
+}
+.side-nav ul li:nth-child(5):after {
+  content: "Contact";
+  line-height: 65px;
+  margin-left: -20px;
+}
+
+
+.side-nav ul li:hover {
+  transform: translateX(-70px);
+}
+
+.side-nav ul li:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+.side-nav ul li > div {
+  display: inline-block;
+  padding: 15px 0;
+  background: transparent;
+}
+
+.side-nav ul li div { position: relative; }
+
+.side-nav i {
+  color: #020143;
+font-size: 22px;
+  /*background-color: white;*/
+
+}
+
+
