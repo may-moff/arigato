@@ -1,8 +1,66 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
-.about{
-    height: 100vh;
-    padding-top: 12vh;
-}
-{
 
+
+/* This applies for anydevice that has a width from 0 to 800px  */
+
+.about-container {
+  padding-top: 12vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin: 10px; */
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+  margin-right: 10px;
+  margin-bottom: 100px;
 }
+
+.about-main-title {
+  padding-bottom: 20px;
+}
+
+.about-welcome-title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 50px;
+}
+
+.about-image-portrait {
+  width: 300px;
+  border-radius: 50%;
+  border: 20px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-bottom: 50px;
+  /* position: absolute; */
+  /* right: 0px; */
+  display: flex;
+  flex-flow: row-reverse-wrap;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/shapes.svg");
+
+  /* Set a specific height */
+  min-height: 50%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 100vw;
+}
+
+.about-paragraph {
+  margin: 0 50px;
+}
+
+/* This applies from 600px onwards */
+@media (min-width: 600px) {
+  .about-paragraph {
+    float: left;
+    width: 60%;
+  }
+}
+

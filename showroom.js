@@ -1,5 +1,5 @@
 
-var currentSlide = 1;
+let currentSlide = 1;
 
 const slides = document.getElementsByClassName("carousel-Img");
 
