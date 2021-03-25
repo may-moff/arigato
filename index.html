@@ -43,18 +43,18 @@
 
   <!-- This is where the home section starts. -->
   <div class="home" id="home">
-  <video class="home-video" autoplay loop>
-     <source src="/assets/Studio Sach_Home Video.webm"
-            type="video/webm">
-     <source src="assets/Studio Sach_Home Video.mp4"
-            type="video/mp4">
+  <video class="home-video" autoplay loop muted>
+     <source src="/assets/Studio Sach_Home Video_loRes.webm"
+            type="video/webm"></source>
+     <source src="assets/Studio Sach_Home Video_loRes.mp4"
+            type="video/mp4"></source>
   </video>
   </div>
 
   <!-- This is where the home section ends -->
 
   <!--   This is where the showroom section starts-->
-  <div class="showroom">
+  <div class="showroom" id="showroom">
     <div class="carousel-container">
       <div class="carousel-Img">
         <div class="numbertext">1 / 14</div>
@@ -140,7 +140,7 @@
         alt="clothing image">
         <div class="text">Sweater Pink</div>
       </div>
-     
+
       <span class="prev" id="prev">
         &#10094; </span>
        <span class="next" id="next">
@@ -148,7 +148,7 @@
     </div>
   </div>
 
-  <div class="showroom" id="showroom"></div>
+
 
   <!--  This is where the showroom section ends -->
 
@@ -162,7 +162,29 @@
  -->
 
   <!-- This is where the inspiration section starts  -->
-  <div class="inspiration" id="inspiration"></div>
+
+  <div class="inspiration" id="inspiration">
+<!-- Place <div> tag where you want the feed to appear -->
+  <!-- Place <div> tag where you want the feed to appear -->
+
+<div class="insta-feed">
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">
+    Powered by Curator.io</a></div>
+</div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function () {
+  var i, e, d = document, s = "script";
+  i = d.createElement("script");
+  i.async = 1;
+
+  i.src = "https://cdn.curator.io/published/d84d6f42-bbd3-47ac-acd1-bae2c0c1e736.js";
+  e = d.getElementsByTagName(s)[0];
+  e.parentNode.insertBefore(i, e);
+})();
+</script>
+  </div>
   <!-- This is where the inspiration ends -->
 
   <!-- This is where the contact section starts -->
@@ -193,7 +215,16 @@
   <!-- This is where the contact section ends -->
 
   <!-- This is where the footer section starts -->
-  <div class="footer"></div>
+  <footer>
+    <section class="footer-container">
+      <h3>Sacha Bekkevold</h3>
+      <a href="mailto:sacha.bekkevold@gmail.com"><i class="fas fa-envelope-square"></i></a>
+      <a href="https://www.instagram.com/studio_sach/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.pinterest.de/sachabekkevold/"><i class="fab fa-pinterest-square"></i></a>
+      <p><a href="#">Impressum</a></p>
+
+    </section>
+  </footer>
   <!-- This is where the footer section ends -->
 
 
