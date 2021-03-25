@@ -6,10 +6,21 @@
     padding: 10px;
     border: 50px #390082;
     margin: 0;
-    height: 80%;
-    overflow: -moz-scrollbars-vertical;
+    height: 100vh;
+
+
+}
+.inspiration{
+    width: available;
+    height: fit-content;
+    overflow: hidden;
+    padding: 10vh;
+    z-index: 1;
 
 }
 .crt-col-3{
     width:10%;
+}
+#curator-feed-default-feed-layout{
+    z-index: 0;
 }

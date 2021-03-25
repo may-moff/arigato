@@ -1,1 +1,5 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
+.about{
+    height: 100vh;
+    padding: 8vh;
+}
