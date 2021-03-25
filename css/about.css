@@ -3,27 +3,41 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  margin: 150px;
+  margin: 10px;
+  height: 100vh;
 }
 
 .about-main-title {
-  font-size: var(--font-size-l);
-  color: pink;
   padding-bottom: 20px;
 }
 
 .about-welcome-title {
-  font-size: var(--font-size-l);
-  color: blue;
   padding-bottom: 20px;
 }
 
 .about-image-portrait {
-  margin-left: auto;
-  padding-bottom: 20px;
+  margin-right: 50px;
   width: 300px;
+  border-radius: 50%;
+  border: 20px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/shapes.svg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
 }
 
 .about-paragraph {
-  color: yellow;
+  margin: 0 50px;
 }
