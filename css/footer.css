@@ -1,15 +1,33 @@
 /*Add the styles for the footer section here. Remember to add 'footer' in front of every class you add so that we don't override each other's code :)*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
 .footer-container{
-    padding-top: 50px;
-    position: fixed;
+    /*padding-top: 50px;*/
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 150px;
-    background-color: black;
+    height: 8vh;
+    background-color: #FFFFFF;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: solid 0.2px
+    border-color: #ea5777;;
 }
+
+  #sacha1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 4vh;
+  }
+
+  #sacha2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4vh;
+  }
 
  i{
     width: 30px;
@@ -18,15 +36,32 @@
 
   a{
       text-decoration: none;
+      color: #ea5777;
+      letter-spacing: 3px;
+  }
+
+  a:hover {
+    color: #62E4DA;
+  }
+
+  .footer-container h5 {
+    font-family: 'Comfortaa';
+    letter-spacing: 3px;
+    color: #ea5777;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: '300';
   }
 
   .footer-container > p > a{
-      color: var(--color-light-green);
+      color: #ea5777;
       font-size: var(--font-size-s);
+      font-family: 'Comfortaa';
+      letter-spacing: 3px;
   }
 
   .footer-container > a{
-   color: #fb1f70;
+   color: #ea5777;
   }
 
   .footer-container > a:hover{
