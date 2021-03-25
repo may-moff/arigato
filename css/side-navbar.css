@@ -4,7 +4,11 @@
     padding-top: 180px;
     background-color: inherit;
     position: fixed;
-    z-index: 999;
+    z-index: 20;
+ }
+
+ .side-nav-links {
+    z-index: -1;
  }
 
 .side-nav-links a {
