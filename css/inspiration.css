@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     width: available;
-    padding: 10px;
     border: 50px #390082;
     margin: 0;
     height: 100vh;
@@ -14,7 +13,7 @@
     width: available;
     height: fit-content;
     overflow: hidden;
-    padding: 10vh;
+    padding-top: 12vh;
     z-index: 1;
 
 }
