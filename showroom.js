@@ -4,7 +4,7 @@ var currentSlide = 1;
 const slides = document.getElementsByClassName("carousel-Img");
 
 function showSlide(slideIndex) {
-  if (slideIndex > slides.length) { currentSlide = 1 }
+  if (slideIndex > slides.length) { currentSlide = 1} 
   if (slideIndex < 1) { currentSlide = slides.length }
   for ( let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none'
