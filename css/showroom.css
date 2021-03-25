@@ -25,6 +25,7 @@
 }
 
 .carousel-Img {
+  margin: 0 auto;
   display: flex;
   height: 90%;
   width: 90%;
@@ -79,7 +80,6 @@
 .next:hover {
   background-color: rgba(209, 19, 130, 0.8);
 }
-
 
 @keyframes fade {
   from {
