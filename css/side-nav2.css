@@ -70,6 +70,7 @@ h2 {
   background: transparent;
   /*border: solid;*/
   color: white;
+  text-shadow: 2px 2px 2px gray;
   font-size: 22px;
   font-weight: '700';
 
@@ -87,6 +88,7 @@ h2 {
   content: "Home";
   line-height: 65px;
   margin-left: -30px;
+
 }
 .side-nav ul li:nth-child(2):after {
   content: "Showroom";
@@ -134,4 +136,46 @@ font-size: 22px;
 
 }
 
+@media screen and (max-width: 1024px) {
+  /*.side-nav ul li {
+    width: 65%;
+  }*/
+  .side-nav {
+    margin-left: 5px;
+  }
+  .side-nav i {
+  color: #020143;
+  font-size: 18px;
+  /*background-color: white;*/
+  }
+  .side-nav ul li > div {
+  display: inline-block;
+  padding: 8px 0;
+  background: transparent;
+  }
+  .side-nav ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 65px;
+  margin-left: -30px;
+  }
+  .side-nav ul li:nth-child(2):after {
+    content: "Showroom";
+    line-height: 65px;
+  }
+  .side-nav ul li:nth-child(3):after {
+    content: "About";
+    line-height: 65px;
+    margin-left: -25px;
+
+  }
+  .side-nav ul li:nth-child(4):after {
+    content: "Inspiration";
+    line-height: 65px;
+  }
+  .side-nav ul li:nth-child(5):after {
+    content: "Contact";
+    line-height: 65px;
+    margin-left: -20px;
+  }
+}
 
