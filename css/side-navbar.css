@@ -7,9 +7,13 @@
     z-index: 20;
  }
 
- .side-nav-links {
-    z-index: -1;
- }
+.hover {
+  display: none;
+}
+
+a:hover + .hover {
+    display: block;
+}
 
 .side-nav-links a {
   color: white;
@@ -24,12 +28,14 @@
 }
 
 .nav-button {
+
   background-color: #62E4DA;
   /*size of button*/
   padding: 8px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  /*display: inline-block;*/
   font-size: 8px;
   border-radius: 34px;
 }
@@ -38,6 +44,7 @@
 .nav-button:hover {
   color: black;
   background-color: #62E4DA;
+
 }
 
 
