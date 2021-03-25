@@ -19,9 +19,8 @@
   height: 80%;
   margin: 0 auto;
   position: relative;
-  background-color: rgba(98, 228, 218, 0.4);
+  background-color: #9c11a81f;
   border-radius: 1.5rem;
-  overflow: hidden;
   object-fit: contain;
   justify-content: center;
 }
@@ -36,18 +35,27 @@
   justify-content: center;
 }
 .numbertext {
-  color: #1b10b493;
+  color: #1b10b4ce;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
   left: 10px;
 }
+.text {
+  color: #1b10b4ce;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 49%;
   cursor: pointer;
 }
 
@@ -57,6 +65,12 @@
 
 .next {
   right: 10px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(209, 19, 130, 0.8) 0.8);
 }
 
 @keyframes fade {
