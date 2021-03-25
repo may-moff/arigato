@@ -1,1 +1,43 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 100vh;
+}
+
+.about-main-title {
+  padding-bottom: 20px;
+}
+
+.about-welcome-title {
+  padding-bottom: 20px;
+}
+
+.about-image-portrait {
+  margin-right: 50px;
+  width: 300px;
+  border-radius: 50%;
+  border: 20px solid rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/shapes.svg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.about-paragraph {
+  margin: 0 50px;
+}
