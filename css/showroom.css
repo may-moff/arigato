@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-items: center;
+  padding-top: 12vh;
 }
 
 .carousel-container {
@@ -78,6 +79,7 @@
 .next:hover {
   background-color: rgba(209, 19, 130, 0.8);
 }
+
 
 @keyframes fade {
   from {

@@ -1,8 +1,10 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
 
+
 /* This applies for anydevice that has a width from 0 to 800px  */
 
 .about-container {
+  padding-top: 12vh;
   /* display: flex; */
   /* flex-direction: column; */
   /* margin: 10px; */
@@ -61,3 +63,4 @@
     width: 60%;
   }
 }
+
