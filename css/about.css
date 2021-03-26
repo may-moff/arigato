@@ -1,10 +1,10 @@
 /*Add the styles for the about section here. Remember to add 'about' in front of every class you add so that we don't override each other's code :)*/
 
-
 /* This applies for anydevice that has a width from 0 to 800px  */
 
 .about-container {
   padding-top: 12vh;
+  margin-top: 12vh;
   /* display: flex; */
   /* flex-direction: column; */
   /* margin: 10px; */
@@ -22,17 +22,26 @@
 .about-welcome-title {
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-left: 50px;
+  margin-left: 100px;
+  color: #62e4da;
+}
+
+.about-hello-span {
+  font-size: 40px;
+  font-family: "Chakra Petch", sans-serif;
+  color: #62e4da;
+  line-height: 2.5;
 }
 
 .about-image-portrait {
-  width: 300px;
+  width: 25vw;
   border-radius: 50%;
   border: 20px solid rgba(255, 255, 255, 0.8);
   margin-left: auto;
   margin-bottom: 50px;
-  /* position: absolute; */
-  /* right: 0px; */
+  position: absolute;
+  right: 100px;
+  /* top: 0; */
   display: flex;
   flex-flow: row-reverse-wrap;
 }
@@ -40,30 +49,82 @@
 .parallax {
   /* The image used */
   background-image: url("../assets/circles.svg");
-
+  position: relative;
   /* Set a specific height */
-  min-height: 50%;
+  min-height: 500%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
- 
 
   background-size: 500px;
   width: 100vw;
-
 }
 
 .about-paragraph {
-  margin: 0 50px;
+  margin: 0 100px;
+  color: white;
+  width: 50%;
+  margin-top: 100px;
+  font-size: var(--font-size-l);
+  line-height: 1.5;
+  height: 100%;
 }
 
-/* This applies from 600px onwards */
-@media (min-width: 600px) {
+/* This applies below 768px onwards */
+@media only screen and (max-width: 768px) {
   .about-paragraph {
-    float: left;
-    width: 60%;
+    /* float: left;
+    width: 60%; */
+    /* margin-right: 50px; */
+    font-size: var(--font-size-m);
   }
-}
 
+  .about-container {
+    padding-top: 12vh;
+    margin-top: 12vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: 10px; */
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+
+  .about-image-portrait {
+    position: relative;
+    width: 300px;
+  }
+
+  .about-main-title {
+    padding-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  .about-welcome-title {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 100px;
+    color: #62e4da;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../assets/circles.svg");
+    /* background-attachment: scroll; */
+  }
+  /* position: relative; */
+  /* Set a specific height */
+  /* min-height: 500%; */
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    background-size: 500px;
+    width: 100vw; */
+}
