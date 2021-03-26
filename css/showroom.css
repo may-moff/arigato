@@ -42,9 +42,11 @@
 }
 
 .numbertext {
-  color: #1b10b4ce;
-  font-size: 22px;
-  padding: 8px 12px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--font-size-s);
+  color: var(--color-light-green);
   position: absolute;
   top: 0;
   left: 10px;
@@ -78,7 +80,7 @@
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(209, 19, 130, 0.8);
+  background-color: #f35373;
 }
 
 @keyframes fade {
