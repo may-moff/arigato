@@ -13,6 +13,9 @@
   /* position: relative; */
   margin-right: 10px;
   margin-bottom: 100px;
+  background-image: url("../assets/circles.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .about-main-title {
@@ -48,24 +51,31 @@
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/circles.svg");
-  position: relative;
-  /* Set a specific height */
-  min-height: 500%;
+  /* background-image: url("../assets/circles.svg");
+  background-repeat: no-repeat;
+  object-fit: cover; */
+  /* background-size: ; */
+  /* width: 500px;
+  display: flex;
+  flex-flow: row-reverse-wrap; */
+  /* position: relative; */
+}
+/* Set a specific height */
+/* min-height: 500%;  */
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+/* Create the parallax scrolling effect */
+/* background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
 
   background-size: 500px;
   width: 100vw;
-}
+/* } */
 
 .about-paragraph {
   margin: 0 100px;
   color: white;
-  width: 50%;
+  width: 60%;
   margin-top: 100px;
   font-size: var(--font-size-l);
   line-height: 1.5;
@@ -111,12 +121,16 @@
     color: #62e4da;
   }
 
-  .parallax {
-    /* The image used */
-    background-image: url("../assets/circles.svg");
-    /* background-attachment: scroll; */
-  }
-  /* position: relative; */
+  /* .parallax { */
+  /* The image used */
+  /* background-image: url("../assets/circles.svg"); */
+  /* background-attachment: scroll; */
+  /* position: static;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat; */
+  /* }  */
+
   /* Set a specific height */
   /* min-height: 500%; */
 
