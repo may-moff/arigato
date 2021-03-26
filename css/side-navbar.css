@@ -44,45 +44,41 @@
 .side-nav i {
   color:#1b10b4ce;
 }
-/*.hover {
-  display: none;
-}
 
-a:hover + .hover {
+@media screen and (max-width: 1024px) {
+  .sec {
+    display: none;
+    position: absolute;
+    left: 5rem;
+    /*background-color: white;*/
+    opacity: .8;
+    color: #9c11a81f;
+
+    font-weight: bold;
+    font-family: 'Chakra Petch';
+    font-weight: 400;
+    font-size: 20px;
+    /*color: var(--color-light-green);*/
+    text-shadow: 2px 2px 2px var(--color-light-green);
+  }
+
+  .side-nav a {
+    width: 4rem;
+  }
+
+  .side-nav i {
+    color:#1b10b4ce;
+    font-size: 22px;
+    margin-top: -4px;
+  }
+
+  .side-nav a:hover + .sec {
     display: block;
+    /*postition: relative;*/
+    margin-left: -20px;
+    margin-top: -45px;
+    color: #1b10b4ce;
+  }
 }
-
-.side-nav-links a {
-  color: white;
-  border: solid 4px;
-}*/
-
-/*.side-nav-links li {*/
-  /*padding between buttons*/
-/*  padding: 12px;*/
-  /*space between beginning of page and button*/
-/*  margin-left: 20px;
-}
-*/
-/*.nav-button {
-
-  background-color: #62E4DA;
-
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-
-  font-size: 8px;
-  border-radius: 34px;
-}
-
-
-.nav-button:hover {
-  color: black;
-  background-color: #62E4DA;
-
-}*/
-
 
 
